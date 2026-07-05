@@ -20,7 +20,7 @@ export default function LoginPage() {
       setLoading(true);
       setError('');
 
-      // API call to backend  ...
+      // API call to backend...
       const { data } = await api.post('/auth/login', form);
 
       console.log('Login response:', data); // ← debug line
